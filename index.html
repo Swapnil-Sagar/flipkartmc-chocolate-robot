@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate Pickup Game</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Chocolate Pickup Game</h1>
+      <label for="grid-size-input">Grid Size:</label>
+      <input type="text" id="grid-size-input" min="1" value="5" max="10" step="1" />
+      <button id="reset-button">Reset Game</button>
+      <button id="auto-play">Auto Play</button>
+      <div class="scoreboard">
+        <p>Robot 1 chocolates: <span id="robot1-score">0</span></p>
+        <p>Robot 2 chocolates: <span id="robot2-score">0</span></p>
+      </div>
+      <div id="grid"></div>
+    </div>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
